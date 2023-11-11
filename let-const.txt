@@ -1,0 +1,20 @@
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+/* Write an ES2015 Version */
+const PI = 3.14;
+
+- What is the difference between ***var*** and ***let***?
+let is strictly limited to block-scope where var can be global
+Var can be both resassigned and redeclared, let can only be resassigned
+
+- What is the difference between **var** and ***const***?
+const is strictly limited to block-scope where var can be global
+Var can be both resassigned and redeclared, const cannot be redeclared OR resassigned (in the scope of its own block)
+
+- What is the difference between **let** and **const**?
+let can only be resassigned, const cannot be redeclared OR resassigned (in the scope of its own block)
+
+- What is hoisting?
+Only relevant to var, hoisting is when var variables are declared first during compilation, and then initialized after.
+This results in issues where if you were to try to console.log() a var before it was initialized, the console will return undefined.
